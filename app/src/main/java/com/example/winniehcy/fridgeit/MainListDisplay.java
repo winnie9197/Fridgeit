@@ -21,6 +21,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.NumberPicker;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -120,7 +121,10 @@ public class MainListDisplay extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(MainListDisplay.this);
 
         //dialog content
-        builder.setTitle(R.string.dialog_change_quantity_title);
+        Cursor existing_entry_cursor = (Cursor) listView.getItemAtPosition(position);
+        String name = existing_entry_cursor.getString(existing_entry_cursor.getColumnIndexOrThrow(FoodEntryContract.FoodEntry.COLUMN_NAME_ITEM));
+        String title = getString(R.string.dialog_change_quantity_title);
+        builder.setTitle( title + " (" + name + ")" );
 
         LayoutInflater inflater = getLayoutInflater();
         final View view = inflater.inflate(R.layout.content_change_quantity_dialog, null);
@@ -234,10 +238,6 @@ public class MainListDisplay extends AppCompatActivity {
     //Menu selection
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_settings:
-                // User chose the "Settings" item, show the app settings UI...
-                return true;
-
             case R.id.action_add_food_entry:
                 startNewEntryActivity();
                 return true;
