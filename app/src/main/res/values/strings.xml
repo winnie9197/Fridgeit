@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Fridgeit</string>
+
+
+    <string name="title_activity_main_list_display">MainListDisplay</string>
+
+    <string name="fridge_name">Fridge Items</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_food_entry">Add</string>
+    <string name="action_delete_new_entry">Delete</string>
+
+    <string name="dialog_change_quantity_title">Quantity Update</string>
+    <string name="button_save_food_entry">Save</string>
+    <string name="food_name_hint">Item</string>
+    <string name="food_quantity_hint">Quantity</string>
+    <string name="food_unit_hint">Unit</string>
+
+    <string name="nothing_in_list">There is nothing in the fridge.</string>
+
+    <string-array name="categories_array">
+        <item>Categories</item>
+        <item>Meat and poultry</item>
+        <item>Fruits and Vegetables</item>
+        <item>Dairy and eggs</item>
+        <item>Seafood</item>
+        <item>Cooked foods</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="dialog_use_up_message">
+        <item>use all</item>
+    </string-array>
+</resources>
