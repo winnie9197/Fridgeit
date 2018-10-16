@@ -1,5 +1,4 @@
 # Fridgeit
 App to track groceries.
 
-##### Android
-##### SQLite 
+Built with Android & SQLite.
