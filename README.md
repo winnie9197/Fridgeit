@@ -1,5 +1,6 @@
 # Fridgeit
 
-Android with SQLite -
+App to track groceries.
 
-Manual insert, save, delete of food item into database, with (Name, Quantity, Unit, Category)
+Android
+SQLite 
